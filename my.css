@@ -72,7 +72,7 @@ body {
 	text-align: center;
 	font-size: calc(2vw + 10px);
 	font-weight: 200;
-	cursor: pointer;
+	cursor: default;
   }
   .nav__list-item {
 	position: relative;
@@ -82,6 +82,7 @@ body {
 	transform: translate(0%, 100%);
 	transition: opacity 0.2s ease, transform 0.3s ease;
 	margin-right: 25px;
+	cursor: pointer
   }
   .nav__list-item:before {
 	content: "";
