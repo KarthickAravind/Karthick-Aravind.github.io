@@ -1,2 +1,0 @@
-//nav bar
-$('body').classList.add("home_is_visible");document.getElementByClassName("button").on("click", function(){  $('body').classList.toggle("nav_is_visible");});function removeClasses() {  document.querySelectorAll(".menu ul li").each(function() {    let link = this.find('a').attr('href');  $('body').removeClass(link);  });}document.querySelectorAll(".menu a").on("click", function(e){  e.preventDefault();  removeClasses();  let link = this.attr('href');  $('body').addClass(link);  $('body').classList.remove("nav_is_visible");});
