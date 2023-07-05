@@ -76,7 +76,7 @@ h1:after {
   text-shadow:0 1rem 0 white,
               0 2rem 0 white;
 }
-/* For Layout */
+/* For Layout end */
 
 
 
@@ -303,7 +303,7 @@ h1:after {
   border: 1px solid rgba(255, 0, 88, 0.4);
   box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
 }
-/* For Cards */
+/* For Cards end */
 
 
 
@@ -418,7 +418,7 @@ section {
 .accordion-item:target .accordion-link .ion-md-arrow-down{
   display: block;
 }
-/* For Accordions */
+/* For Accordions end */
 
 
 
@@ -740,4 +740,169 @@ section {
 }
 
 
-/* For Time Line */
+/* For Time Line end*/
+
+
+
+
+
+
+
+
+
+/* For Drop Down Box */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap");
+
+
+.dropdown {
+  color: #000000;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+details {
+  font-size: 1rem;
+  margin: 7em auto;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  background: #ffffff;
+  border-radius: 8px;
+  position: relative;
+  width: 500px;
+}
+details .summary-title {
+  user-select: none;
+}
+details:hover {
+  cursor: pointer;
+}
+details .summary-content {
+  border-top: 1px solid #e2e8f0;
+  cursor: default;
+  padding: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+details summary {
+  list-style: none;
+  padding: 1em;
+}
+details summary:focus {
+  outline: none;
+}
+details summary:hover .summary-chevron-up svg {
+  opacity: 1;
+}
+details .summary-chevron-up svg {
+  opacity: 0.5;
+}
+details .summary-chevron-up,
+details .summary-chevron-down {
+  pointer-events: none;
+  position: absolute;
+  top: 0.75em;
+  right: 1em;
+  background: #ffffff;
+}
+details .summary-chevron-up svg,
+details .summary-chevron-down svg {
+  display: block;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+/* For Drop Down Box end*/
+
+
+
+
+
+
+/* For PAGINATION */
+
+
+.pagination {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	--ddim: 10px;
+	--rd: 15px;
+	--rdim: calc(var(--rd)*2);
+	--pm: #ffff03;
+}
+
+label {
+	content: '';
+	margin: 0 10px;
+	height: var(--ddim);
+	width: var(--ddim);
+	background: #f7b997;
+	cursor: pointer;
+}
+
+label:first-child {margin-left: 0;}
+label:last-child {margin-right: 0;}
+input {display: none;}
+
+.pacman {
+	content: '';
+	position: absolute;
+	top: calc(-1*var(--ddim));
+	left: calc(-1*var(--ddim)/2);
+	height: var(--rdim);
+	width: var(--rdim);
+	transition: transform 250ms linear;
+}
+
+.pacman:before,
+.pacman:after {
+	content: '';
+	position: absolute;
+	height: var(--rd);
+	width: var(--rdim);
+	left: 0;
+	background: var(--pm);
+	transition: inherit;
+}
+
+.pacman:before {
+	top: 0;
+	border-top-left-radius: var(--rdim);
+	border-top-right-radius: var(--rdim);
+	transform-origin: bottom center;
+	transform: rotate(-45deg);
+}
+
+.pacman:after {
+	bottom: 0;
+	border-bottom-left-radius: var(--rdim);
+	border-bottom-right-radius: var(--rdim);
+	transform-origin: top center;
+	transform: rotate(45deg);
+}
+
+@keyframes waka {
+	0% {}
+	50% {transform: rotate(0);}
+	100% {}
+}
+
+input[type="radio"]:hover ~ .pacman:before,
+input[type="radio"]:hover ~ .pacman:after {
+	animation: waka 350ms infinite;
+}
+
+input[id="dot-1"]:checked ~ .pacman {transform: translateX(var(--ddim));}
+input[id="dot-2"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + var(--rdim)));}
+input[id="dot-3"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + var(--rdim)*2));}
+input[id="dot-4"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + var(--rdim)*3));}
+input[id="dot-5"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + var(--rdim)*4));}
+input[id="dot-6"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + var(--rdim)*5));}
+input[id="dot-7"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + var(--rdim)*6));}
+input[id="dot-8"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + var(--rdim)*7));}
+/* For PAGINATION end */
