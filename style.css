@@ -18,7 +18,7 @@ em {font-style:normal;font-size:1.2em;}
 i {font-style:normal;color:#00ff77;}
 h1, p, hr, .etc {
   width:100%;
-  max-width:40rem;
+  max-width:60rem;
   margin:0 auto;
 }
 p {padding-bottom:1em;}
@@ -45,12 +45,12 @@ h1:after {
   left:0;
   color:#00ffd2;
 }
-hr {
+.hr-container1 hr {
   position:relative;
   padding:3rem 0;
   border:none;
 }
-hr:before {
+.hr-container1 hr:before {
   content:'\2044\2217\2013\2013\2013\2013\2013\2217\2044';
   position:absolute;
   top:1.2rem;
@@ -157,13 +157,13 @@ hr:before {
 .container .box:nth-child(1):before,
 .container .box:nth-child(1):after
 {
-  background: linear-gradient(315deg, #ffbc00, #ff0058)
+  background: linear-gradient(315deg, #00ffd2,#ff003c )
 }
 
 .container .box:nth-child(2):before,
 .container .box:nth-child(2):after
 {
-  background: linear-gradient(315deg, #03a9f4, #ff0058)
+  background: linear-gradient(315deg, #00ff77, #00ff77)
 }
 
 .container .box:nth-child(3):before,
@@ -304,3 +304,117 @@ hr:before {
   box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
 }
 /* For Cards */
+
+
+
+
+/* For Accordions*/
+*,
+*::before,
+*::after{
+  margin:0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+
+/*Section used for centering process*/
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.accordion-item{
+  background-color: #000000;
+  border-radius: .4rem;
+}
+
+.accordion-item hr{
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.accordion-link{
+  font-size: 1.6rem;
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+  background-color: #000000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.accordion-link h3{
+  font-weight:500;
+  font-size: 20px;
+}
+
+.accordion-link i{
+  color: #e7d5ff;
+  padding: .5rem;
+  
+}
+
+.accordion-link ul{
+  display:flex;
+  align-items: flex-end;
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+.accordion-link li{
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 0 0 1px 5px;
+}
+
+.accordion-link div{
+  display: flex;
+}
+
+.accordion-link .ion-md-arrow-down{
+  display: none;
+}
+
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+  transition: max-height 650ms;
+}
+
+
+
+.answer p{
+  color: #fff;
+  font-size: 15px;
+  padding: 2rem;
+  
+}
+
+.accordion-item:target .answer{
+  max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link .ion-md-arrow-forward{
+  display: none
+}
+
+.accordion-item:target .accordion-link .ion-md-arrow-down{
+  display: block;
+}
+/* For Accordions*/
