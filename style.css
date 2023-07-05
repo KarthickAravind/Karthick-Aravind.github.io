@@ -824,24 +824,34 @@ details summary::-webkit-details-marker {
 
 
 /* For PAGINATION */
-
-
 .pagination {
-	position: relative;
+  position: fixed;
+  top: 30%;
 	display: flex;
 	flex-direction: row;
 	--ddim: 10px;
 	--rd: 15px;
 	--rdim: calc(var(--rd)*2);
-	--pm: #ffff03;
+	--pm: #00ff77;
+    margin: 0 15px;
+    transform: rotate(90deg);
+    transform-origin: left;
 }
+
+.pagination span {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  background-color: #ccc;
+}
+
 
 label {
 	content: '';
 	margin: 0 10px;
 	height: var(--ddim);
 	width: var(--ddim);
-	background: #f7b997;
+	background: #ffffff;
 	cursor: pointer;
 }
 
