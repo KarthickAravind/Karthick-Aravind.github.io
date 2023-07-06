@@ -15,7 +15,7 @@ body {
   background:#000000;
 }
 em {font-style:normal;font-size:1.2em;}
-i {font-style:normal;color:#00ff77;}
+i {font-style:normal;color:rgb(0, 255, 119);}
 h1, p, hr, .etc {
   width:100%;
   max-width:60rem;
@@ -838,6 +838,7 @@ details summary::-webkit-details-marker {
     transform-origin: left;
 }
 
+
 .pagination span {
   display: inline-block;
   padding: 5px;
@@ -851,7 +852,7 @@ label {
 	margin: 0 10px;
 	height: var(--ddim);
 	width: var(--ddim);
-	background: #ffffff;
+	background: #00ffd2;
 	cursor: pointer;
 }
 
@@ -907,6 +908,7 @@ input[type="radio"]:hover ~ .pacman:after {
 	animation: waka 350ms infinite;
 }
 
+
 input[id="dot-1"]:checked ~ .pacman {transform: translateX(var(--ddim));}
 input[id="dot-2"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + var(--rdim)));}
 input[id="dot-3"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + var(--rdim)*2));}
@@ -915,4 +917,5 @@ input[id="dot-5"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + va
 input[id="dot-6"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + var(--rdim)*5));}
 input[id="dot-7"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + var(--rdim)*6));}
 input[id="dot-8"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + var(--rdim)*7));}
+
 /* For PAGINATION end */
