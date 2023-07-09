@@ -689,7 +689,7 @@ details:hover {
   cursor: pointer;
 }
 details .summary-content {
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid rgb(255, 255, 255);
   cursor: default;
   padding: 1em;
   font-weight: 300;
@@ -733,7 +733,7 @@ details summary::-webkit-details-marker {
 /* For PAGINATION */
 .pagination {
   position: fixed;
-  top: 30%;
+  top: 38%;
 	display: flex;
 	flex-direction: row;
 	--ddim: 10px;
@@ -853,6 +853,12 @@ input[id="dot-8"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + va
 section{
   text-align:center;
 }
+
+.footer p{
+  color: #000;
+  text-align: center;
+}
+
 .footer #button{
 	width:35px;
 	height:35px;
@@ -898,7 +904,7 @@ section{
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
-	height: 20em;
+	height: 15em;
 }
 .footer #container{
 	margin-top:5px;
