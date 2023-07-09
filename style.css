@@ -847,7 +847,7 @@ details summary::-webkit-details-marker {
 	--ddim: 10px;
 	--rd: 15px;
 	--rdim: calc(var(--rd)*2);
-	--pm: rgb(0, 255, 119);
+	--pm: #00ff77;
     margin: 0 15px;
     transform: rotate(90deg);
     transform-origin: left;
@@ -942,6 +942,21 @@ input[id="dot-8"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + va
 
 
 
+
+
+
+/* For Glitch effect*/
+
+
+
+/* For Glitch effect end*/
+
+
+
+
+
+
+
 /* For Footer*/
 section{
   text-align:center;
@@ -949,7 +964,7 @@ section{
 .footer #button{
 	width:35px;
 	height:35px;
-	border: #00ffd2 12px solid;
+	border: #00ff77 12px solid;
 	border-radius:35px;
 	margin:0 auto;
 	position:relative;
@@ -1034,10 +1049,6 @@ height:100%;
   top: 0;
   left: 0;
 }
-/*
-    This is the outer svg wrapper that the SVG itself will 
-    fill. Multiple svg-wrapper classes can be put side by side.
-*/
 
 .svg-wrapper {
   margin-top: 0;
@@ -1050,29 +1061,24 @@ height:100%;
   margin-left: 5px;
   margin-right: 5px
 }
-/*
-  This is where we define the fill, color, thickness,
-  and stroke pattern of the SVG when there is no hover.
-  The dasharray and offset together define the line position
-  under the words. Here's also where the transition speed is set.
-*/
+
 
 #shape {
   stroke-width: 6px;
   fill: transparent;
-  stroke: #009FFD;
+  stroke: #000000;
   stroke-dasharray: 85 400;
   stroke-dashoffset: -220;
   transition: 1s all ease;
 }
 /* 
-    Pushing the text up into the SVG. Without this the
-    text would be below the div's.
 */
 
 #text {
-  margin-top: -35px;
+  margin-top: -42px;
   text-align: center;
+
+  
 }
 
 #text a {
